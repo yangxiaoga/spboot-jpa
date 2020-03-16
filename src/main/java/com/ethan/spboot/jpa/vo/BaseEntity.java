@@ -1,12 +1,11 @@
 package com.ethan.spboot.jpa.vo;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import org.hibernate.annotations.GenericGenerator;
 
 /**
  * @author Administrator
@@ -22,8 +21,9 @@ public class BaseEntity  implements Serializable{
 	private static final long serialVersionUID = 4158913702554191572L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	protected Long id;
+	@GeneratedValue(generator="uuid")
+	@GenericGenerator(name="uuid",strategy="uuid")
+	protected String id;
 	
 	@Column(name = "name")
 	private String name;
@@ -31,11 +31,10 @@ public class BaseEntity  implements Serializable{
 	@Column(name = "price")
 	private double price;
 	
-
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getName() {

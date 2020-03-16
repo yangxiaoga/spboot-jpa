@@ -17,7 +17,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Table(name="t_student_card")
 public class StudentCard {
 	private String id;
-	private Student student;
+	private Student1 student;
 	private String name;
 	
 	@Id
@@ -33,11 +33,11 @@ public class StudentCard {
 	}
 	
 	@OneToOne(mappedBy="studentCard")//由Student主导
-	public Student getStudent() {
+	public Student1 getStudent() {
 		return student;
 	}
 	
-	public void setStudent(Student student) {
+	public void setStudent(Student1 student) {
 		this.student = student;
 	}
 

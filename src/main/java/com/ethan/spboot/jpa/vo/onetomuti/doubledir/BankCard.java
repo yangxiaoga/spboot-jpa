@@ -1,5 +1,6 @@
 package com.ethan.spboot.jpa.vo.onetomuti.doubledir;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,7 +30,7 @@ public class BankCard {
 		return name;
 	}
 	
-	@ManyToOne
+	@ManyToOne(cascade={CascadeType.ALL})
 	public Person getPerson() {
 		return person;
 	}

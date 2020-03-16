@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ethan.spboot.jpa.service.ComputerService;
 import com.ethan.spboot.jpa.vo.Computer;
 
-/**
- * @author Administrator
- *
- */
 @RestController
 public class Controller {
 	

@@ -3,6 +3,7 @@ package com.ethan.spboot.jpa.vo.onetomuti.singledir;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,7 +35,7 @@ public class Car {
 		return name;
 	}
 	
-	@OneToMany
+	@OneToMany(cascade={CascadeType.ALL})
 	@JoinColumn(name="carId")//关联的外键名称，如果不写JoinColumn,默认会生成中间关系表
 	public Set<Wheel> getWheels() {
 		return wheels;

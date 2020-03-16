@@ -20,7 +20,11 @@
   </properties>
 
   <dependencies>
-  
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-logging</artifactId>
+      <scope>compile</scope>
+    </dependency>
   <!-- JPA -->
   <dependency>
         <groupId>org.springframework.boot</groupId>

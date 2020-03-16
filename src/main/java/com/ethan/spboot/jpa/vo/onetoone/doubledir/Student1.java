@@ -32,8 +32,8 @@ import org.hibernate.annotations.GenericGenerator;
  * 
  */
 @Entity
-@Table(name="t_student")
-public class Student {
+@Table
+public class Student1 {
 	private String id;
 	private StudentCard studentCard;
 	private String name;

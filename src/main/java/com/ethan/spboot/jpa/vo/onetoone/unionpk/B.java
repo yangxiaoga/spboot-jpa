@@ -1,5 +1,6 @@
 package com.ethan.spboot.jpa.vo.onetoone.unionpk;
 
+/*
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,10 +10,6 @@ import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.GenericGenerator;
 
-/**
- * @author Administrator
- *
- */
 @Entity
 public class B{
 	
@@ -41,3 +38,4 @@ public class B{
 		this.a = a;
 	}
 }
+*/

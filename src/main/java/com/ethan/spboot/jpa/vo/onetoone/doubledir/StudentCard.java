@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -13,6 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
  * 一对一双向@OneToOne(mappedBy="studentCard"),由Student主导
  */
 @Entity
+@Table(name="t_student_card")
 public class StudentCard {
 	private String id;
 	private Student student;

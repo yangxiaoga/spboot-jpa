@@ -4,6 +4,7 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -13,6 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
  * @Embedded //标记需要嵌入的组件
  */
 @Entity
+@Table(name="t_body")
 public class Body {
 	private String id;
 	private Brain brain;

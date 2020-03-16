@@ -1,5 +1,5 @@
 package com.ethan.spboot.jpa.vo.onetoone.unionpk;
-
+/*
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +10,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 //需要的注解@IdClass(value = UnionPK.class)
 //属性的注解，联合主键@Id
+
 @Entity
 @IdClass(value = UnionPK.class)
 public class A {
@@ -44,3 +45,4 @@ public class A {
 		this.age = age;
 	}
 }
+*/
